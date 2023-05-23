@@ -12,3 +12,4 @@ In the code sample here, we have used two major libraries used to connect to the
 2. MongoClient
 
 The application demonstrates the use of the above libraries from a centralized code for all db operations, also at the same time, it utilizes the connection pooling feature to improve performance.
+In the current version of MongoDB, both the above libraries support connection pooling automatically based on the pool size, you just need to make sure not to close any connection. Pool size is very subjective and shall depend on your application usage.
